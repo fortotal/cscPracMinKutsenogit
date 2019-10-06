@@ -1,3 +1,6 @@
-buildResume:
-	latex resume.tex && enter
-	dvipdfmx resume.dvi 	
+buildResumeDvi:
+	latex resume.tex
+buildResumepdf:
+	dvipdfmx resume.dvi 
+AllBuild: 
+	pdflatex resume.tex	
